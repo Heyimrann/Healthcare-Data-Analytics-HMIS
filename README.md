@@ -1,94 +1,128 @@
 # Healthcare Data Analytics: Hospital Performance Evaluation Using India's HMIS Data
 
-**A B.Tech Biotechnology Major Project | Galgotias University**
-
 ## Project Overview
 
-This project focuses on analysing district-level healthcare data from India's Health Management Information System (HMIS). The objective is to explore healthcare service indicators, examine reporting patterns across districts and financial years, and present meaningful insights through data analytics and visualisation.
+This project focuses on analysing healthcare indicators using district-wise and year-wise data from India's Health Management Information System (HMIS) for Jharkhand.
 
-The project uses Python, SQL and Power BI for data processing, analysis and dashboard development.
+The objective is to understand healthcare reporting patterns, outpatient department (OPD) attendance and maternal healthcare indicators through data cleaning, exploratory data analysis and visualization.
 
-## Project Objectives
+This project was carried out as part of my Healthcare Data Analyst Internship at **YuvaIntern**.
 
-- Explore district-wise healthcare indicators.
-- Analyse healthcare reporting patterns across financial years.
-- Examine selected OPD, IPD, maternal health, child immunisation and laboratory indicators.
-- Identify missing data and other data-quality issues.
-- Develop an interactive healthcare analytics dashboard.
+## Objectives
+
+- Clean and preprocess healthcare data.
+- Explore district-wise and financial-year-wise reporting patterns.
+- Analyse missing values and healthcare indicator distribution.
+- Study Allopathic and AYUSH OPD attendance trends.
+- Examine maternal healthcare indicators.
+- Present findings through meaningful visualizations.
 
 ## Dataset Information
 
-| Attribute | Description |
-|---|---|
-| Data source | Health Management Information System (HMIS) |
-| State | Jharkhand, India |
-| Records | 264,240 |
-| Columns | 13 |
-| Districts (LGD) | 24 |
-| Financial years | 2008–09 to 2021–22 |
-| Distinct indicators | 599 |
-| Indicator categories | 36 |
+- **State:** Jharkhand, India
+- **Source:** Health Management Information System (HMIS), Ministry of Health and Family Welfare, Government of India
+- **Dataset access:** Dataful
+- **Total Records:** 264,240
+- **Total Columns:** 13
+- **Districts:** 24
+- **Financial Years:** 2008–09 to 2021–22
+- **Healthcare Indicators:** 599
 
-**Source attribution:** Health Management Information System, Ministry of Health and Family Welfare, Government of India. Dataset accessed through Dataful.
+*Note: The original dataset is not included in this repository. Please refer to the original data source and its applicable usage terms.*
 
-## Tools & Technologies
+## Tools and Technologies
 
-- **Python:** Data analysis and processing
-- **Pandas:** Data cleaning and manipulation
-- **SQL:** Data querying and management
-- **Power BI:** Dashboard and visualisation
-- **Google Colab:** Python development environment
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Jupyter Notebook
+- Power BI (dashboard development)
 
 ## Project Workflow
 
-1. Dataset collection and loading
-2. Data exploration and profiling
-3. Data cleaning and preprocessing
-4. Healthcare indicator identification
-5. District-wise and year-wise analysis
-6. SQL-based data querying
-7. Power BI dashboard development
-8. Findings and project documentation
+1. Project planning and understanding the dataset.
+2. Data cleaning and preprocessing.
+3. Exploratory Data Analysis (EDA).
+4. Healthcare indicator analysis.
+5. Data visualization.
+6. Interpretation of findings and recommendations.
+
+## Key Analysis Areas
+
+### 1. Data Quality Analysis
+- Missing value analysis.
+- Duplicate record checking.
+- Data type conversion and preprocessing.
+
+### 2. Healthcare Reporting Analysis
+- Year-wise record distribution.
+- District-wise record distribution.
+- Healthcare indicator distribution.
+
+### 3. OPD Attendance Analysis
+- Allopathic outpatient attendance.
+- AYUSH outpatient attendance.
+- Annual attendance trends.
+
+### 4. Maternal Healthcare Analysis
+- Pregnant women registered for ANC.
+- Women receiving four or more ANC check-ups.
+- Institutional deliveries.
+
+## Visualizations
+
+The repository includes the following analysis graphs:
+
+- Missing Values Analysis
+- Year-wise Records Distribution
+- District-wise Records Distribution
+- Healthcare Indicator Distribution
+- OPD Attendance Trends
+- Maternal Health Trends
+- Top 10 Districts by Institutional Deliveries
 
 ## Repository Structure
 
 ```text
 Healthcare-Data-Analytics-HMIS/
 │
-├── data/
-├── notebooks/
-├── sql/
-├── powerbi/
-├── presentation/
-├── reports/
 ├── README.md
-├── requirements.txt
-└── .gitignore
+├── healthcare_analysis.py
+│
+├── missing_values_chart.png
+├── year_wise_records.png
+├── district_wise_records.png
+├── indicator_distribution.png
+├── opd_attendance_trend.png
+├── maternal_health_trend.png
+├── top10_district_deliveries.png
+│
+├── maternal_health_yearly_summary.csv
+└── district_maternal_health_2021_22.csv
 ```
 
-## Current Project Status
+## Important Findings
 
-**In Progress**
+- The dataset contains 264,240 records across 24 districts and 14 financial years.
+- Missing values were identified in several fields, particularly the value and note columns.
+- Allopathic and AYUSH OPD attendance declined during 2020–21 and showed recovery in 2021–22.
+- Maternal healthcare indicators showed changes across the analysed financial years.
+- District-wise differences in reported institutional delivery counts were observed.
 
-Initial dataset profiling has been completed. Healthcare KPI validation, detailed analysis, SQL implementation and Power BI dashboard development are in progress.
+## Limitations
 
-## Important Data Limitations
+- The dataset contains aggregate district-level information rather than individual patient records.
+- Reported counts should not be interpreted as direct measures of healthcare quality or performance.
+- Changes in reporting coverage may influence year-wise record counts.
+- Missing values and indicator definitions require careful interpretation.
+- Predictive modelling and dashboard development should only be considered completed when the corresponding implementation and validation are available.
 
-- The dataset contains district-level annual records, not individual patient records.
-- Missing values require careful interpretation.
-- Facility categories must be checked for overlap before calculating combined totals.
-- Findings will be reported only after validating indicator definitions and units.
-
-## Expected Outcome
-
-The project aims to develop a structured healthcare analytics workflow that can help explore reported health-service patterns and support evidence-informed interpretation of district-level HMIS data.
+**Project:** Healthcare Data Analytics using HMIS Data
 
 ## Author
 
 **Md Imran**  
 B.Tech Biotechnology  
 Galgotias University
-
----
-
-*Academic project developed for educational and analytical purposes.*
